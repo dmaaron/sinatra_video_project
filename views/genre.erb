@@ -1,0 +1,14 @@
+<% @rows.each do |row| %>
+<div class='video_container'>
+<ul>
+<li>Title: <%= row['title']%> </li>
+<li>Description: <%= row['description']%> </li>
+<li>Genre: <%= row['genre'].capitalize%> </li>
+<li><a href='/videos/<%= row['id'] %>/edit'>Edit Movie</a></li>
+<li><form method='post' action='/videos/<%= row['id'] %>/delete'>
+<button class='btn-inverse'>Delete Video</button>
+</form></li>
+</ul>
+<iframe width="420" height="270" src="http://www.youtube.com/embed/<%= row['url'].split('=').last %>"  allowfullscreen></iframe>
+</div>
+<% end %>

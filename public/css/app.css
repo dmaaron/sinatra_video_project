@@ -1,0 +1,104 @@
+body {
+	font-family: Georgia, serif;
+	background-color: rgb(244, 244, 244);
+}
+
+input {
+	width:300px;
+}
+
+a {
+	color:#FF530D ;
+}
+
+.container {	
+	min-height: 800px;
+	background-color: white;
+	border-left: 2px solid #FF530D;
+	border-right: 2px solid #FF530D;
+	border-bottom: 2px solid #FF530D;
+}
+
+.container li {
+	font-size: 13px;
+	margin-bottom: 5px;
+	color: #777777;
+}
+
+ul {
+	list-style: none;
+}
+
+
+.video_container {
+	margin-top:55px;
+	padding:10px;
+	border-bottom: 1px solid #919599;
+}
+
+.video_container ul {
+	float:left;
+	margin-right: 20px;
+	width: 80px;
+}
+
+.video_container iframe {
+	float:left;
+	margin-left: 100px;
+}
+
+.video_container:after {
+	content:".";
+	height:0;
+	display: block;
+	visibility: hidden;
+	zoom:1;
+	clear:both;
+}
+
+.authored {
+font-size: 12px;
+position: relative;
+left: 150px;
+top: 15px;
+font-style: italic;
+}
+
+.slider-wrapper {
+
+	height:500px;
+	width:500px;
+	position:relative;
+    top:55px;
+    margin-left: 200px
+}
+
+.nivoSlider {
+    background:url('') no-repeat 50% 50%;
+}
+.nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+.nivoSlider a {
+    border:0;
+    display:block;
+}
+
+.theme-navigation-inside .nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+    height: auto;
+}
+
+.add_form {
+    margin-top: 75px;
+}
+
+#mynavbar {
+	margin-left:0;
+}

@@ -1,0 +1,8 @@
+<form action="/videos/<%= @row['id'] %>/edit" method="post" class="add_form">
+    <input type="text" name="title" value="<%= @row['title'] %>" autofocus> <br />
+    <input type="text" name="description" value="<%= @row['description'] %>"> <br />
+    <input type="text" name="url" value="<%= @row['url'] %>"> <br />
+    <input type="text" name="genre" value="<%= @row['genre'] %>" <br />
+    <button>Edit Video</button><br />
+</form>
+
