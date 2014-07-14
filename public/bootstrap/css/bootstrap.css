@@ -4394,9 +4394,6 @@ input[type="submit"].btn.btn-mini {
   width: auto;
 }
 
-.authored > a:hover {
-  color:#777777;
-}
 
 .nav-collapse.collapse {
   height: auto;

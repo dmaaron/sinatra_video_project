@@ -56,11 +56,10 @@ ul {
 	clear:both;
 }
 
-.authored {
-font-size: 12px;
+.authored  {
 position: relative;
-left: 150px;
-top: 15px;
+left: 175px;
+top: 20px;
 font-style: italic;
 }
 

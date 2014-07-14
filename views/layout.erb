@@ -28,12 +28,11 @@
                                 <ul class='dropdown-menu' role='menu'>
                                     <% @genres.each do |genre| %>
                                     <li><a href="/videos/genres/<%= genre['genre'] %>"> <%= genre['genre'].capitalize %></a></li>
-                                <% end %>
-                                
-                            </ul>
+                                    <% end %>
+                                </ul>
                         </li>
-                         <li><a href="#" class="authored">Site by David and Lee</a></li>                     
-                    </div>
+                         <li class="authored">Site by David and Lee</li>    
+                        </div>
                 </div>
             </div>
     <%= yield %>
