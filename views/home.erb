@@ -1,6 +1,6 @@
 <div class="slider-wrapper">
     <div id="slider" class="nivoSlider">
-        <% @image_urls.each do |image_url| %>
+        <% @image_urls.shuffle.each do |image_url| %>
             <img src="<%= image_url %>">
         <% end %>
     </div>
