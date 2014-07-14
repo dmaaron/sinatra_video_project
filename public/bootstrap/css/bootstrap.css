@@ -4601,6 +4601,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav > li {
   float: left;
+  margin: 10px 0px 0px 50px;
 }
 
 .navbar .nav > li > a {
@@ -4609,6 +4610,7 @@ input[type="submit"].btn.btn-mini {
   color: #777777;
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
+  font-size:16px;
 }
 
 .navbar .nav .dropdown-toggle .caret {
