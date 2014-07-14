@@ -647,8 +647,6 @@
         controlNavThumbs: false,
         pauseOnHover: true,
         manualAdvance: false,
-        prevText: ' ',
-        nextText: ' ',
         randomStart: false,
         beforeChange: function(){},
         afterChange: function(){},
