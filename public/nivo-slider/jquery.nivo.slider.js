@@ -80,11 +80,20 @@
 
         // Detect Window Resize
         $(window).resize(function() {
-            slider.children('img').width(slider.width());
+            //slider.children('img').width(slider.width());
             sliderImg.attr('src', vars.currentImage.attr('src'));
             sliderImg.stop().height('auto');
             $('.nivo-slice').remove();
             $('.nivo-box').remove();
+        });
+        slider.width($(kids[vars.currentSlide]).width());
+
+        $(window).load(function(){
+            return $('#slider').nivoSlider({
+                afterLoad:  function() {
+                    return $('#slider').wrap('<div id="nivo-stabilizer" />');
+                }
+            });
         });
 
         //Create caption
@@ -302,6 +311,13 @@
             settings.beforeChange.call(this);
 
             // Set current background before change
+            if(vars.currentSlide+1 === vars.totalSlides) {
+                return slider.width $(kids[0]).width();
+            }
+            else {
+                return slider.width $(kids[vars.currentSlide + 1]).width();
+            }
+
             if(!nudge){
                 sliderImg.attr('src', vars.currentImage.attr('src'));
             } else {
